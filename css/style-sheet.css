@@ -1,0 +1,72 @@
+* {
+    font-family: "Roboto Thin";
+}
+
+footer > a, .connectWith {
+    color: black;
+    text-decoration: none;
+    padding-right: 25px;
+}
+
+footer > a:hover, .connectWith:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+.arrow{
+    transform: rotate(-45deg);
+}
+div#links > div.row > div.col > a, .connectWith{
+    text-decoration: none;
+    color: black;
+}
+
+/*Scrolling*/
+
+.smoothScroll {
+    transition: all 0.3s ease-in-out;
+}
+
+.smoothScroll[href^="#"] {
+    cursor: pointer;
+}
+
+.smoothScroll:hover {
+    color: #333;
+}
+
+.smoothScroll:focus {
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Moving banner*/
+.banner {
+    border-right: 0.15em solid black;
+    font-size: 2em;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 5s;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.banner-img {
+    background-image: url("imgs/background-banner.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px; /* or some other value */
+}
+
+#downloadBtn{
+    border-radius: 20px;
+}
